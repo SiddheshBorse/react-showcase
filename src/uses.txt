@@ -1,0 +1,12 @@
+package.json: Contains the dependencies and the scripts required by the application
+package-lock.json: Conatin consistent installation record of your packages
+gitignore and Readme were quite obivious
+node_modules: all packages installed here
+/public/manifests.json: used for progressive applications
+/public/index.html: react builds single page web applications this the HTML page for these web applications. Only changes to be made are made in the head tag. React will control the UI of the webpage using the root element in this HTML page
+/src/index.js:Here we specify the root component and connect it to the App component(The App component is the component that is used to nest all other components)
+DOM Element: This is the element controlled by React
+App.css: This is the CSS File that is used to style to body of the webpage
+Apptest.js: This is used for unit testing of the application
+index.css: This is used for styling of the body tag
+ npm start -> index.html served in the browser (This contains the root DOM node) -> Control enters index.js -> React renders the App Component into root DOM node -> App Component(App.js) contains the HTML that finally renders on the page
