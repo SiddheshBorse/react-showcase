@@ -12,11 +12,23 @@ class StateExample extends Component {
         }
         //Here we are setting the initial state of the object
     }
+    singleClickHandler() {
+        this.setState({
+            message: "You clicked on the button"
+        })
+    }
+    doubleClickHandler() {
+        this.setState({
+            message: "You clicked the button 2 times"
+        })
+    }
+
+
     render() {
         return (
             <div>
                 <h1>{this.state.message}</h1>
-                <button onClick={() => this.singleClickHandler} onDoubleClick={() => this.doubleClickHandler}>CLICK THIS BUTTON</button>
+                <button onClick={() => this.singleClickHandler()} onDoubleClick={() => this.doubleClickHandler()}>CLICK THIS BUTTON</button>
             </div>
         )
     }
